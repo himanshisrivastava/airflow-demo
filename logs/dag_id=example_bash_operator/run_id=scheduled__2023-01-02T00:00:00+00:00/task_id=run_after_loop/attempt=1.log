@@ -1,0 +1,28 @@
+[2023-01-03T10:51:27.848+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: example_bash_operator.run_after_loop scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T10:51:27.859+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: example_bash_operator.run_after_loop scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T10:51:27.860+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T10:51:27.861+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2023-01-03T10:51:27.862+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T10:51:27.879+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): run_after_loop> on 2023-01-02 00:00:00+00:00
+[2023-01-03T10:51:27.885+0000] {standard_task_runner.py:55} INFO - Started process 2007 to run task
+[2023-01-03T10:51:27.890+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'example_bash_operator', 'run_after_loop', 'scheduled__2023-01-02T00:00:00+00:00', '--job-id', '14', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_bash_operator.py', '--cfg-path', '/tmp/tmpbeoiw0gs']
+[2023-01-03T10:51:27.891+0000] {standard_task_runner.py:83} INFO - Job 14: Subtask run_after_loop
+[2023-01-03T10:51:27.970+0000] {task_command.py:389} INFO - Running <TaskInstance: example_bash_operator.run_after_loop scheduled__2023-01-02T00:00:00+00:00 [running]> on host 42006a8ba3a3
+[2023-01-03T10:51:28.050+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_bash_operator
+AIRFLOW_CTX_TASK_ID=run_after_loop
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-02T00:00:00+00:00
+[2023-01-03T10:51:28.053+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-01-03T10:51:28.054+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo 1']
+[2023-01-03T10:51:28.066+0000] {subprocess.py:86} INFO - Output:
+[2023-01-03T10:51:28.069+0000] {subprocess.py:93} INFO - 1
+[2023-01-03T10:51:28.070+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-01-03T10:51:28.102+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=example_bash_operator, task_id=run_after_loop, execution_date=20230102T000000, start_date=20230103T105127, end_date=20230103T105128
+[2023-01-03T10:51:28.142+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-01-03T10:51:28.167+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
